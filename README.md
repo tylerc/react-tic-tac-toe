@@ -32,8 +32,10 @@ There are subdirectories containing differing implementations of the app:
 📐 Setup
 --------
 
-1. Run `npm install` in the root directory of this repo.
-2. Then run `tsc` to compile all the TypeScript files.
+1. Make sure you have a [recent Node.js version](https://nodejs.org) installed (I used 10.16.0)
+2. Run `npm install` in the root directory of this repo.
+3. Install typescript if you don't have it already: `npm install -g typescript`.
+3. Then run `tsc` to compile all the TypeScript files.
 
 🚀 Running the Code
 -------------------
@@ -56,9 +58,7 @@ Which should start a server at [http://localhost:1234/](http://localhost:1234/).
 
 ### 🌎 Server-Side Examples
 
-For `ssr-classic/`, `ssr-only/`, and `ssr-only-no-server-state` make sure you have a
-[recent Node.js version](https://nodejs.org) installed (I used 10.16.0). And then run this from within one of those
-folders:
+For `ssr-classic/`, `ssr-only/`, and `ssr-only-no-server-state/` , run this from within one of those folders:
 
 ```
 node server.js
