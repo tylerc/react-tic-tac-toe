@@ -25,7 +25,7 @@ There are subdirectories containing differing implementations of the app:
    The server stores game states using a session token and the client POSTs using `<form>`s to make moves.
 - `ssr-only-no-server-state/` - This is the `ssr-only/` app from above modified to store game state in a cookie so that
    no state needs to be stored on the server.
-- `ssr-turbolinks/` - This is the `ssr-only-no-server-state/` app from above, modified to use [https://github.com/turbolinks/turbolinks](https://github.com/turbolinks/turbolinks)
+- `ssr-turbolinks/` - This is the `ssr-only-no-server-state/` app from above, modified to use [Turbolinks](https://github.com/turbolinks/turbolinks)
   in order to make loading feel a bit better. This breaks conventions a bit by changing the game state via `GET`
   requests, but the experience is a bit smoother.
 
@@ -38,9 +38,9 @@ There are subdirectories containing differing implementations of the app:
 --------
 
 1. Clone this repo: https://github.com/tylerc/react-tic-tac-toe
-2. Make sure you have a [recent Node.js version](https://nodejs.org) installed (I used 10.16.0)
+2. Make sure you have a [recent Node.js version](https://nodejs.org) installed (I used 10.16.0).
 3. Run `npm install` in the root directory of this repo.
-4. Install typescript if you don't have it already: `npm install -g typescript`.
+4. Install TypeScript if you don't have it already: `npm install -g typescript`.
 5. Then run `tsc` to compile all the TypeScript files.
 
 🚀 Running the Code
