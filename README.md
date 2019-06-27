@@ -1,6 +1,8 @@
 🎮 react-tic-tac-toe
 ====================
 
+React tic-tac-toe 🎮 with: TypeScript 💙, Hooks ⚓, and Server-Side Rendering 🖥!
+
 This repo is an exercise in learning the basics of React.
 
 The basis of this is the [Tic Tac Toe tutorial found on React's website](https://reactjs.org/tutorial/tutorial.html).
@@ -19,6 +21,11 @@ There are subdirectories containing differing implementations of the app:
    The server stores game states using a session token and the client POSTs using `<form>`s to make moves.
 - `ssr2/` - This is the `ssr/` app from above modified to store game state in a cookie so that no state needs to be
    stored on the server.
+   
+ 🌟 See it Live!
+ ---------------
+ 
+ The `ssr2` example is running live at [https://react-tic-tac-toe.tylerc.now.sh](https://react-tic-tac-toe.tylerc.now.sh).
 
 📐 Setup
 --------

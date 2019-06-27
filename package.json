@@ -1,6 +1,9 @@
 {
   "name": "react-tic-tac-toe",
   "version": "0.1.0",
+  "engines": {
+    "node": "10.x"
+  },
   "private": true,
   "devDependencies": {
     "@types/hapi__iron": "^5.1.0",

@@ -1,0 +1,15 @@
+{
+  "name": "react-tic-tac-toe",
+  "version": 2,
+  "builds": [
+    {
+      "src": "ssr2/server.tsx",
+      "use": "@now/node-server",
+      "config": { "maxLambdaSize": "50mb" }
+    }
+  ],
+  "routes": [
+    { "src":  "/(.*)", "dest": "ssr2/server.tsx" }
+  ],
+  "regions": ["pdx1"]
+}
