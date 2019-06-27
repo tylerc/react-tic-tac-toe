@@ -57,7 +57,6 @@ const server = http.createServer(async (req, res) => {
                 <link rel="stylesheet" href="/index.css" type="text/css"/>
             </head>
             <body>
-                <h1>Hello, World!</h1>
                 <div id="root">
                     {React.createElement(Game)}
                 </div>

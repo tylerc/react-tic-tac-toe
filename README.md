@@ -17,12 +17,14 @@ There are subdirectories containing differing implementations of the app:
 - `hooks/` - This is the original app modified to use [React Hooks](https://reactjs.org/docs/hooks-intro.html) instead
    of a mix of function and component classes.
 - `ssr-classic/` - This is the `hooks` app from above modified to use [React's Server-Side Rendering](https://reactjs.org/docs/react-dom-server.html).
-  [Rollup](https://rollupjs.org) called dynamically from the server to bundle the client-side assets.
+  "classic" because when most people say "server-side rendering" with React, they mean that the initial render is done
+  by the server, and then React on the client-side takes it from there. Which is exactly what this example does.
+  [Rollup](https://rollupjs.org) is called dynamically from the server to bundle the client-side assets.
 - `ssr-only/`  - This is the `hooks` app from above modified to use
    [React's Server-Side Rendering](https://reactjs.org/docs/react-dom-server.html) and _no client-side JavaScript_.
    The server stores game states using a session token and the client POSTs using `<form>`s to make moves.
-- `ssr-only-no-server-state/` - This is the `ssr/` app from above modified to store game state in a cookie so that no
-   state needs to be stored on the server.
+- `ssr-only-no-server-state/` - This is the `ssr-only/` app from above modified to store game state in a cookie so that
+   no state needs to be stored on the server.
    
  🌟 See it Live!
  ---------------
@@ -32,10 +34,11 @@ There are subdirectories containing differing implementations of the app:
 📐 Setup
 --------
 
-1. Make sure you have a [recent Node.js version](https://nodejs.org) installed (I used 10.16.0)
-2. Run `npm install` in the root directory of this repo.
-3. Install typescript if you don't have it already: `npm install -g typescript`.
-3. Then run `tsc` to compile all the TypeScript files.
+1. Clone this repo: https://github.com/tylerc/react-tic-tac-toe
+2. Make sure you have a [recent Node.js version](https://nodejs.org) installed (I used 10.16.0)
+3. Run `npm install` in the root directory of this repo.
+4. Install typescript if you don't have it already: `npm install -g typescript`.
+5. Then run `tsc` to compile all the TypeScript files.
 
 🚀 Running the Code
 -------------------
