@@ -16,6 +16,8 @@ There are subdirectories containing differing implementations of the app:
 - `orig/` - This is the original app, plus my take on implementing the optional exercises at the end.
 - `hooks/` - This is the original app modified to use [React Hooks](https://reactjs.org/docs/hooks-intro.html) instead
    of a mix of function and component classes.
+- `ssr-classic/` - This is the `hooks` app from above modified to use [React's Server-Side Rendering](https://reactjs.org/docs/react-dom-server.html).
+  [Rollup](https://rollupjs.org) called dynamically from the server to bundle the client-side assets.
 - `ssr/`  - This is the `hooks` app from above modified to use
    [React's Server-Side Rendering](https://reactjs.org/docs/react-dom-server.html) and _no client-side JavaScript_.
    The server stores game states using a session token and the client POSTs using `<form>`s to make moves.

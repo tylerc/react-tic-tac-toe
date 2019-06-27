@@ -21,19 +21,19 @@ function respondWithGameState(res: http.ServerResponse, gameState: GameState, se
             <link rel="stylesheet" href="/index.css" type="text/css"/>
         </head>
         <body>
-        <h1>Hello, World!</h1>
-        {React.createElement(Game, {
-            ...gameState,
-            onHistoryClicked: (move: number) => {
-                return "/history/click/" + move;
-            },
-            onSquareClicked: (i: number) => {
-                return "/square/click/" + i;
-            },
-            onMoveOrderClicked: () => {
-                return "/move-order/reverse";
-            }
-        })}
+            <h1>Hello, World!</h1>
+            {React.createElement(Game, {
+                ...gameState,
+                onHistoryClicked: (move: number) => {
+                    return "/history/click/" + move;
+                },
+                onSquareClicked: (i: number) => {
+                    return "/square/click/" + i;
+                },
+                onMoveOrderClicked: () => {
+                    return "/move-order/reverse";
+                }
+            })}
         </body>
         </html>
     ).replace(/SERVER_SESSION_TOKEN/g, sessionToken));
