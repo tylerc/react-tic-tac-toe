@@ -3,13 +3,13 @@
   "version": 2,
   "builds": [
     {
-      "src": "ssr2/server.tsx",
+      "src": "ssr-only-no-server-state/server.tsx",
       "use": "@now/node-server",
       "config": { "maxLambdaSize": "50mb" }
     }
   ],
   "routes": [
-    { "src":  "/(.*)", "dest": "ssr2/server.tsx" }
+    { "src":  "/(.*)", "dest": "ssr-only-no-server-state/server.tsx" }
   ],
   "regions": ["pdx1"]
 }

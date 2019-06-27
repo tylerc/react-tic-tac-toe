@@ -18,16 +18,16 @@ There are subdirectories containing differing implementations of the app:
    of a mix of function and component classes.
 - `ssr-classic/` - This is the `hooks` app from above modified to use [React's Server-Side Rendering](https://reactjs.org/docs/react-dom-server.html).
   [Rollup](https://rollupjs.org) called dynamically from the server to bundle the client-side assets.
-- `ssr/`  - This is the `hooks` app from above modified to use
+- `ssr-only/`  - This is the `hooks` app from above modified to use
    [React's Server-Side Rendering](https://reactjs.org/docs/react-dom-server.html) and _no client-side JavaScript_.
    The server stores game states using a session token and the client POSTs using `<form>`s to make moves.
-- `ssr2/` - This is the `ssr/` app from above modified to store game state in a cookie so that no state needs to be
-   stored on the server.
+- `ssr-only-no-server-state/` - This is the `ssr/` app from above modified to store game state in a cookie so that no
+   state needs to be stored on the server.
    
  🌟 See it Live!
  ---------------
  
- The `ssr2` example is running live at [https://react-tic-tac-toe.tylerc.now.sh](https://react-tic-tac-toe.tylerc.now.sh).
+ The `ssr-only-no-server-state` example is running live at [https://react-tic-tac-toe.tylerc.now.sh](https://react-tic-tac-toe.tylerc.now.sh).
 
 📐 Setup
 --------
@@ -56,8 +56,9 @@ Which should start a server at [http://localhost:1234/](http://localhost:1234/).
 
 ### 🌎 Server-Side Examples
 
-For `ssr/` and `ssr2/` make sure you have a [recent Node.js version](https://nodejs.org) installed (I used 10.16.0).
-And then run this from the `ssr/` or `ssr2/` folder:
+For `ssr-classic/`, `ssr-only/`, and `ssr-only-no-server-state` make sure you have a
+[recent Node.js version](https://nodejs.org) installed (I used 10.16.0). And then run this from within one of those
+folders:
 
 ```
 node server.js
