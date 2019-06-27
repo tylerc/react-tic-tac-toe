@@ -25,7 +25,10 @@ There are subdirectories containing differing implementations of the app:
    The server stores game states using a session token and the client POSTs using `<form>`s to make moves.
 - `ssr-only-no-server-state/` - This is the `ssr-only/` app from above modified to store game state in a cookie so that
    no state needs to be stored on the server.
-   
+- `ssr-turbolinks/` - This is the `ssr-only-no-server-state/` app from above, modified to use [https://github.com/turbolinks/turbolinks](https://github.com/turbolinks/turbolinks)
+  in order to make loading feel a bit better. This breaks conventions a bit by changing the game state via `GET`
+  requests, but the experience is a bit smoother.
+
  🌟 See it Live!
  ---------------
  
@@ -61,7 +64,8 @@ Which should start a server at [http://localhost:1234/](http://localhost:1234/).
 
 ### 🌎 Server-Side Examples
 
-For `ssr-classic/`, `ssr-only/`, and `ssr-only-no-server-state/` , run this from within one of those folders:
+For `ssr-classic/`, `ssr-only/`, `ssr-only-no-server-state/`, and `ssr-turbolinks/`, run this from within one of those
+folders:
 
 ```
 node server.js
