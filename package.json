@@ -1,0 +1,31 @@
+{
+  "name": "react-extracted",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@types/hapi__iron": "^5.1.0",
+    "@types/react": "^16.8.22",
+    "@types/react-dom": "^16.8.4",
+    "cssnano": "^4.1.10",
+    "csstype": "^2.6.5",
+    "typescript": "^3.5.2"
+  },
+  "dependencies": {
+    "@hapi/iron": "^5.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "scripts": {},
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
